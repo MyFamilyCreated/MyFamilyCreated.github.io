@@ -50,18 +50,19 @@ window.onmessage = function(event) {
   
   <body>
 <div style="text-align:center"
-    <button     
-	class="snipcart-add-item"
-	class="button"
-    data-item-id="30"
-    data-item-name="My Family Created the National Security State"
-    data-item-price="15.00"
-    data-item-url="https://youdontknowdemo.github.io/index.html"
-    data-item-description="We will send your email a downloadable copy of My Family Created the National Security State"
-    data-item-file-guid="6765b33a-dbc8-43df-bed3-777bf9b23cf0" 
-	onclick="button_click()">
-<p style="text-align:center"><u>Buy My Family Createted the National Security State, (Instant Email)</u>!</p>
-</button>
+    <button class="button" onclick="button_click()">
+	<div style="text-align:center" class="snipcart-summary">
+    Items in your cart: <span class="snipcart-total-items"in your cart></span>
+    Total price: <span class="snipcart-total-price"></span>
+</div>
+<p style="text-align:center"><u>Click here to Checkout!</u></p></button>
+	<script>
+      function button_click() {
+        window.parent.postMessage(" ", "*");
+      }
+    </script>
+    <input type="text" class="input" id="theMessage">
+<!–– divs can use style and maybe other css like text align ––>
 </div>
 
   </body>

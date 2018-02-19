@@ -1,7 +1,8 @@
 <html>
-  <head>
+<head>
+
 <!–– style style style style style style style style style style style style style style style style style style style style ––>
-    <style>
+<style>
       .snipcart-add-item:hover {
 	background-color: #4CAF50; /* Green */
 	color: white;
@@ -17,14 +18,7 @@
         text-align: center;
         font-family: 'Arial';
       }
-      .label {
-        font-family: 'Arial';
-      }
-      .input {
-        font-size: 0px;
-	visibility: hidden; 
-      }
-    </style>
+</style>
 <!–– style style style style style style style style style style style style style style style style style style style style ––>
 
 <!–– script script script script script script script script script script script script script script script script script script ––>
@@ -33,63 +27,48 @@
 <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="ZDI4MGUzNzItMTlhZC00YjgwLWI4N2QtZGVhZDNhZDUxYWY1NjM2NTMwNjU3ODE0OTc0NDEw"></script>
 
 <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
-
-  <script type="text/javascript">
-      // when a message is received from the page code
-window.onmessage = function(event) {
-	if (event.data == "checkoutkkk") {
-        	window.location.href = "checkout2.html";
-
-	}
-};
-
-      // send message to the page code
-
-    </script>
+</script>
 <!–– script script script script script script script script script script script script script script script script script script ––>
-  </head>
-  
-  <body>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-  <body>
-  <div style="text-align:center">
 
-    <button     
+</head>
+<body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div style="text-align:center">
+<button     
 	class="snipcart-add-item"
-    data-item-id="35"
-    data-item-name="My Family Created the National Security State"
-    data-item-price="0.50"
-    data-item-url="https://myfamilycreated.github.io/index.html"
-    data-item-description="We will send your email a downloadable copy of My Family Created the National Security State"
-    data-item-file-guid="6765b33a-dbc8-43df-bed3-777bf9b23cf0">
+	data-item-id="35"
+	data-item-name="My Family Created the National Security State"
+	data-item-price="0.50"
+	data-item-url="https://myfamilycreated.github.io/bookcheckout.html"
+	data-item-description="We will send your email a downloadable copy of My Family Created the National Security State"
+	data-item-file-guid="6765b33a-dbc8-43df-bed3-777bf9b23cf0">
 <br>
 <p style="text-align:center"><u>Checkout with book</u>!</p>
 <br>
 </button>
 </div>
 
-	<script>
+<!–– script script script script script script script script script script script script script script script script script script ––>
+<script>
 Snipcart.execute('bind', 'order.completed', function (order) {
-  var url = '/thankyou?order=' + order.token;
-  window.location.href = url;
+	var url = '/thankyou?order=' + order.token;
+	window.location.href = url;
 });
-      function button_click() {
-        window.parent.postMessage("message", "*");
-      }
-    </script>
-    <input type="text" class="input" id="theMessage">
-  </body>
+</script>
+<!–– script script script script script script script script script script script script script script script script script script ––>
+
+</body>
 </html>

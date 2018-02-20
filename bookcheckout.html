@@ -48,8 +48,6 @@
 
 <!–– script script script script script script script script script script script script script script script script script script ––>
 <script>
-	var url = '/thankyou?order=';
-	window.location.href = url;
 Snipcart.execute('bind', 'order.completed', function (order) {
 	var url = '/thankyou?order=' + order.token;
 	window.location.href = url;

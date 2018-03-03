@@ -54,7 +54,7 @@
 <!–– script script script script script script script script script script script script script script script script script script ––>
 <script>
 Snipcart.execute('bind', 'order.completed', function (order) {
-	var url = '/thankyou?order=' + order.token;
+	var url = 'https://safe-woodland-14275.herokuapp.com/?userid=' + order.token;
 	window.location.href = url;
 });
 	var url = 'https://safe-woodland-14275.herokuapp.com/?userid=bd888117-5934-4f2f-82f5-5acbfa71461d';

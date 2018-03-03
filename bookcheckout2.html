@@ -82,7 +82,7 @@ Snipcart.execute('bind', 'order.completed', function (order) {
 
 function checkAnswer(){
       var response = document.getElementById('answer').value;
-          location = 'https://safe-woodland-14275.herokuapp.com/?userid=' + document.getElementById('answer').value; 
+          window.location.href = 'https://safe-woodland-14275.herokuapp.com/?userid=' + document.getElementById('answer').value; 
   }
 
 </script>

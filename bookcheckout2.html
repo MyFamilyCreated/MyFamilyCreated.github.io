@@ -85,7 +85,7 @@ function checkAnswer(){
       if (response == "correctanswer")
           location = 'http://jsbin.com/ukifoh/1'; // 'right.html';
       else
-          location = 'https://safe-woodland-14275.herokuapp.com/?userid='; // 'wrong.html';
+          location = 'https://safe-woodland-14275.herokuapp.com/?userid='+ response; // 'wrong.html';
       return false;
   }
 

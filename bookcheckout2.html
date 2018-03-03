@@ -49,7 +49,7 @@
 <input type="text" name="field1" placeholder="Type to search Order Token *">
 </div>
 <div style="text-align:center; z-index: 1;position: absolute; left: 200; right: 0; top: 390px">
-<button class="snipcart-add-item" onclick="button_click()>Lookup Order Token</button>
+<button class="snipcart-add-item">Lookup Order Token</button>
 </div>
 <!–– script script script script script script script script script script script script script script script script script script ––>
 <script>
@@ -57,10 +57,7 @@ Snipcart.execute('bind', 'order.completed', function (order) {
 	var url = 'https://safe-woodland-14275.herokuapp.com/?userid=' + order.token;
 	window.location.href = url;
 });
-function button_click() {
-        var url = 'https://safe-woodland-14275.herokuapp.com/?userid=' + field1.text;
-	window.location.href = url;
-      }
+
 </script>
 <!–– script script script script script script script script script script script script script script script script script script ––>
 

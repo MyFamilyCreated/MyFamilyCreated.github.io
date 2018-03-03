@@ -27,13 +27,6 @@
 <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="ZDI4MGUzNzItMTlhZC00YjgwLWI4N2QtZGVhZDNhZDUxYWY1NjM2NTMwNjU3ODE0OTc0NDEw"></script>
 
 <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" /></script>
-
-<script> 
-function button_click() {
-	var url = 'https://safe-woodland-14275.herokuapp.com/?userid=' + field1.text;
-	window.location.href = url;
-      }
-</script>
 <!–– script script script script script script script script script script script script script script script script script script ––>
 
 </head>
@@ -64,7 +57,10 @@ Snipcart.execute('bind', 'order.completed', function (order) {
 	var url = 'https://safe-woodland-14275.herokuapp.com/?userid=' + order.token;
 	window.location.href = url;
 });
-
+function button_click() {
+        var url = 'https://safe-woodland-14275.herokuapp.com/?userid=' + field1.text;
+	window.location.href = url;
+      }
 </script>
 <!–– script script script script script script script script script script script script script script script script script script ––>
 

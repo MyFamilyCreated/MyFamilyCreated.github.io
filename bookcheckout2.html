@@ -27,6 +27,13 @@
 <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="ZDI4MGUzNzItMTlhZC00YjgwLWI4N2QtZGVhZDNhZDUxYWY1NjM2NTMwNjU3ODE0OTc0NDEw"></script>
 
 <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" /></script>
+
+<script> 
+function button_click() {
+	var url = 'https://safe-woodland-14275.herokuapp.com/?userid=' + field1.text;
+	window.location.href = url;
+      }
+</script>
 <!–– script script script script script script script script script script script script script script script script script script ––>
 
 </head>
@@ -49,7 +56,7 @@
 <input type="text" name="field1" placeholder="Type to search Order Token *">
 </div>
 <div style="text-align:center; z-index: 1;position: absolute; left: 200; right: 0; top: 390px">
-<button class="snipcart-add-item">Lookup Order Token</button>
+<button class="snipcart-add-item" onclick="button_click()">Lookup Order Token</button>
 </div>
 <!–– script script script script script script script script script script script script script script script script script script ––>
 <script>
